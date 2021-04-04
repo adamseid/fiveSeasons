@@ -10,13 +10,30 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.js$|jsx/,
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
         },
       },
+      {
+        test: /\.(png|svg|jpe?g|gif)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        include: /images/,
+        use: [
+          {
+            loader: 'url-loader?limit=8192',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'images/',
+              publicPath: 'images/'
+            }
+          }
+        ]
+      },
     ],
+    // loaders: [
+    //   { test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192' }
+    // ],
   },
   optimization: {
     minimize: true,
