@@ -22,11 +22,10 @@ export default class LandingPage extends Component {
     return (
         <Grid container spacing={1}>
             <Grid item xs={12} align="center" class = "title">
-                <Typography component="h4" variant="h4" color = "secondary">
+                <h1 class = "titleText">
                     Cactus Track
-                </Typography>
+                </h1>                    
             </Grid>
-
             <Grid item xs={12} align="center">
                 <div class="grid-container">
                     <Button style={{ textDecoration: 'none' }} to="/map" component={Link} class="map">

@@ -14,13 +14,13 @@ export default class Graphing extends Component {
     return (
         <Grid container spacing={1}>
             <Grid item xs={12} align="center" class = "title">
-                <Typography component="h4" variant="h4" color = "secondary">
-                    Trends
-                </Typography>
+              <h1 class = "titleText">
+                Trends
+              </h1>
             </Grid>
             <Grid item xs={12} align="center">
                 <div class="grid-container">
-                    <img class = "graphingImage" src={logo}/>
+                  <img class = "graphingImage" src={logo}/>
                 </div> 
             </Grid>
         </Grid>

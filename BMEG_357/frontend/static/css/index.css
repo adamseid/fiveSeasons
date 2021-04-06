@@ -1,5 +1,5 @@
 html, body{ 
-    background-color: black;
+    background-color: white;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -30,7 +30,7 @@ html, body{
     grid-template-columns: auto auto;
     grid-template-rows: 150px 150px;
     grid-gap: 10px;
-    background-color: black;
+    background-color: white;
     border: 2px solid white;
     padding: 50px;
   }
@@ -42,34 +42,69 @@ html, body{
     font-size: 30px;
 } */
 .item1{
-  color: yellow;
-  padding-top: 20px;
-  font-size: 30px;
+    position: relative;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    top:-30px;
+    color: black;
+    padding-top: 20px;
+    font-size: 50px;
+    font-weight: bold;
 }
 .item2{
-    color: red;
+    position: relative;
+    top:-30px;
+    color: black;
     padding-top: 20px;
-    font-size: 30px;
+    font-size: 50px;
+    font-weight: bold;
+
 }
 .item3{
-    color: blue;
+    position: relative;
+    top:-30px;
+    color: black;
     padding-top: 20px;
-    font-size: 30px;
+    font-size: 50px;
+        font-weight: bold;
+
 }
 .item4{
-    color: green;
+    position: relative;
+    top:-30px;
+    color: black;
     padding-top: 20px;
-    font-size: 30px;
+    font-size: 50px;
+    font-weight: bold;
+
 }
 
 .title{
-    background-color: black;
+    background-color: white;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
     padding-top: 30px;
     padding-bottom: 20px;
+    /* font-family: ; */
+}
+
+.maptitle{
+  background-color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  /* padding-top: 30px; */
+  /* padding-bottom: 20px; */
+  /* font-family: ; */
+}
+
+.titleText{
+  padding-bottom: 0;
+  margin-bottom: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
 }
   
 /* .button1{
@@ -78,29 +113,29 @@ html, body{
 } */
 
 .map{
-    border: 5px solid yellow;
-    background: black;
+    border: 5px solid #FB7C7C;
+    background: #FB7C7C;
     opacity: 0.6;
     cursor: pointer;
 }
 
 .lists{
     border: 5px solid red;
-    background: black;
+    background: red;
     opacity: 0.6;
     cursor: pointer;
 }
 
 .trends{
     border: 5px solid blue;
-    background: black;
+    background: blue;
     opacity: 0.6;
     cursor: pointer;
 }
 
 .sendData{
     border: 5px solid green;
-    background: black;
+    background: green;
     opacity: 0.6;
     cursor: pointer;
 }
@@ -118,6 +153,16 @@ html, body{
     margin-right: auto;
     max-width: 100%;
     object-fit: contain'
+}
+
+.mapImage{
+  position: relative;
+  top: -50px; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  object-fit: contain'
 }
 
 .form {
@@ -186,4 +231,17 @@ html, body{
   
   .form > button:hover {
     background-color: rgb(0, 0, 196);
+  }
+
+  .legend{
+    text-indent: 100px;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size:x-large;
+  }
+
+  .legendBody{
+    text-indent: 100px;
+    align-items: flex-start;
+
   }
