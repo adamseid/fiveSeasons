@@ -37,7 +37,7 @@ def getCurrentValue(id, total_amount):
 
 #Creates coin object and generates attribute values by reading transaction data from csv
 def getCoinInfo(id):
-    data = pd.DataFrame(pd.read_csv('D:/Crypto/Five Seasons Fund/fund_transactions/' + id + '.csv'))
+    data = pd.DataFrame(pd.read_csv('C:/Users/ethio/VS/FiveSeasonsFund/fund_transactions/' + id + '.csv'))
     data["deposit"] = data["deposit"].fillna(0)
     data["withdrawl"] = data["withdrawl"].fillna(0)
     data["price"] = data["price"].fillna(0)
@@ -58,7 +58,7 @@ def getCoinInfo(id):
 
 #Creates cash info object with attributes
 def getCashInfo():
-    data = pd.DataFrame(pd.read_csv('D:/Crypto/Five Seasons Fund/fund_transactions/' + 'cash' + '.csv')).to_numpy()
+    data = pd.DataFrame(pd.read_csv('C:/Users/ethio/VS/FiveSeasonsFund/fund_transactions/' + 'cash' + '.csv')).to_numpy()
     cash_info = CashInfo()
     cash_info.id = 'cash'
     cash_info.value = np.sum(data[:, 1])

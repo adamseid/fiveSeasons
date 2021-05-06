@@ -17,7 +17,7 @@ function Test() {
 
     return (
         <div>
-            <div>test</div>
+            <div>test:</div>
             <div>{coins.response}</div>
         </div>
     )

@@ -16,7 +16,7 @@ export default class App extends Component {
     render(){
         return <Router>
             <Switch>
-                <Route path='/landingpage' component={LandingPage}/>
+                <Route path='' component={LandingPage}/>
                 <Route path='/mainpage' component={MainPage}/>
                 <Route path='/test' component={test}/>
             </Switch>
